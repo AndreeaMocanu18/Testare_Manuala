@@ -1,12 +1,12 @@
-<h1>Database Project for **Inserati aici numele aplicatiei pe care o testati**</h1>
+<h1>Database Project for **Studenti**</h1>
 
 The scope of this project is to use all the SQL knowledge gained throught the Software Testing course and apply them in practice.
 
-Application under test: **Inserati aici numele aplicatiei pe care o testati**
+Application under test: <strong>Studenti database</strong>
 
 Tools used: MySQL Workbench
 
-Database description: **Inserati aici o scurta descriere a bazei de date care sa contina scopul ei, informatiile generale pe care le veti salva si orice alte informatii considerati ca sunt relevante pentru o descriere**
+Database description: The project consists in creating a database called "Studenti", that consists of five tables with links between them, SQL commands suitable for adding lines with information and displaying data through the application. The five tables will contain information about students, personal data about them, including faculty, grades and subjects. 
 
 <ol>
 <li>Database Schema </li>
@@ -30,7 +30,21 @@ The tables are connected in the following way:
 
   The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
-  **Inserati aici toate instructiunile de CREATE pe care le-ati scris, atat create database cat si create table**
+  To create the database, I had used the CREATE SQL command : "create database Studenti;".
+  For this database, there had been five tabeles creates : "facultate, informatii_studenti, materii, note, studenti". Also, the tables were created using the CREATE SQL command :
+  1. create table Facultate ;
+  2. create table Informatii_studenti; 
+  3. create table Materii;
+  4. create table Note;
+  5. create table Studenti;
+  For example : create table Materii
+(id int not null primary key auto_increment,
+nume_student varchar(40) not null,
+nume_materie varchar(30) not null,
+An year,
+nume_profesor varchar(30) not null 
+); 
+
 
   After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
 
