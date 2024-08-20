@@ -1,10 +1,10 @@
-<h1>Database Project for **Studenti**</h1>
+<h1>Database Project for *Studenti*</h1>
 
 The scope of this project is to use all the SQL knowledge gained throught the Software Testing course and apply them in practice.
 
 Application under test: <strong>Studenti database</strong>
 
-Tools used: MySQL Workbench
+Tools used: <strong>MySQL Workbench</strong>
 
 Database description: The project consists in creating a database called "Studenti", that consists of five tables with links between them, SQL commands suitable for adding lines with information and displaying data through the application. The five tables will contain information about students, personal data about them, including faculty, grades and subjects. 
 
@@ -22,7 +22,7 @@ The tables are connected in the following way:
 <li>Database Queries</li><br>
 
 <ol type="a">
-  <li>DDL (Data Definition Language)</li>
+  <h2><li>DDL (Data Definition Language)</li></h2>
 
   The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
@@ -192,7 +192,7 @@ cross join note on studenti.id=note.id;
 
 </ol>
 
-<li>Conclusions</li>
+<li><strong>Conclusion</strong></li>
 
 For this project, the SQL language was used which is a specialized language used to manage and manipulate relational databases on different operating systems. The MySQL Workbench application was used to create the Students database, and to organize the data collection.​ SQL commands are instructions used in this project to communicate with the database and perform specific tasks.
 Working on this project had been motivating, since this was my first interaction with SQL and is was a great experince.
