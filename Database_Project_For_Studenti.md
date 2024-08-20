@@ -9,7 +9,7 @@ Tools used: <strong>MySQL Workbench</strong>
 Database description: The project consists in creating a database called "Studenti", that consists of five tables with links between them, SQL commands suitable for adding lines with information and displaying data through the application. The five tables will contain information about students, personal data about them, including faculty, grades and subjects. 
 
 <ol>
-<li>Database Schema </li>
+<h3><li>Database Schema </li></h3>
 <br>
 You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them.
 
@@ -22,17 +22,20 @@ The tables are connected in the following way:
 <li>Database Queries</li><br>
 
 <ol type="a">
-  <h2><li>DDL (Data Definition Language)</li></h2>
+  <li>DDL (Data Definition Language)</li>
 
   The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
   To create the database, I had used the CREATE SQL command : "create database Studenti;".
   For this database, there had been five tabeles creates : "facultate, informatii_studenti, materii, note, studenti". Also, the tables were created using the CREATE SQL command :
-  1. create table Facultate ;
-  2. create table Informatii_studenti; 
-  3. create table Materii;
-  4. create table Note;
-  5. create table Studenti;
+  <ol>
+  <li>create table Facultate;</li>
+  <li>create table Informatii_studenti;</li>
+  <li>create table Materii;</li>
+  <li> create table Note;</li>
+  <li> create table Studenti;;</li>
+</ol>
+
   For example : create table Materii
 (id int not null primary key auto_increment,
 nume_student varchar(40) not null,
@@ -192,7 +195,7 @@ cross join note on studenti.id=note.id;
 
 </ol>
 
-<li><strong>Conclusion</strong></li>
+<h3><li><strong>Conclusion</strong></li></h3>
 
 For this project, the SQL language was used which is a specialized language used to manage and manipulate relational databases on different operating systems. The MySQL Workbench application was used to create the Students database, and to organize the data collection.​ SQL commands are instructions used in this project to communicate with the database and perform specific tasks.
 Working on this project had been motivating, since this was my first interaction with SQL and is was a great experince.
