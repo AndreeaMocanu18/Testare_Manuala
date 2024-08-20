@@ -21,7 +21,7 @@ The tables are connected in the following way:
  
 <li>Database Queries</li><br>
 
-<ol type="a">
+<ol type="1">
   <li>DDL (Data Definition Language)</li>
 
   The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
@@ -29,11 +29,11 @@ The tables are connected in the following way:
   To create the database, I had used the CREATE SQL command : "create database Studenti;".
   For this database, there had been five tabeles creates : "facultate, informatii_studenti, materii, note, studenti". Also, the tables were created using the CREATE SQL command :
   <ol>
-  <li>1. create table Facultate;</li>
-  <li>2. create table Informatii_studenti;</li>
-  <li>3. create table Materii;</li>
-  <li>4. create table Note;</li>
-  <li>5. create table Studenti;;</li>
+  <li>create table Facultate;</li>
+  <li>create table Informatii_studenti;</li>
+  <li>create table Materii;</li>
+  <li>create table Note;</li>
+  <li>create table Studenti;;</li>
 </ol>
 
   For example : create table Materii
