@@ -22,7 +22,7 @@ The tables are connected in the following way:
 <li>Database Queries</li><br>
 
 <ol type="1">
-  <li>DDL (Data Definition Language)</li>
+  <h2><li>DDL (Data Definition Language)</li></h2>
 
   The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
@@ -54,8 +54,7 @@ alter table informatii_studenti
 drop column CNP; - to delete the column CNP from the table informatii_studenti
  
   
-  <li>DML (Data Manipulation Language)</li>
-
+<h2><li>DML (Data Manipulation Language)</li></h2>
   In order to be able to use the database I populated the tables with various data necessary in order to perform queries and manipulate the data. 
   In the testing process, this necessary data is identified in the Test Design phase and created in the Test Implementation phase. 
 
@@ -107,6 +106,7 @@ values
 In the table "Informatii_studenti" there had been added the above information in the form of rows.
 Each value insert had been of the same datatype as the respective column and confirmed of the constraints of the column (if any). The values passed using the insert statement into the tables.
 
+
   After the insert, in order to prepare the data to be better suited for the testing process, I updated some data in the following way:
 
 1. To replace the name from the table "informatii_studenti of one of the parent based on the condition: update informatii_studenti set nume_mama = "Balacu Antonia" where id=1; 
@@ -123,7 +123,7 @@ update informatii_studenti set email = "tdr.grig@gmail.com" where prenume_studen
 7. To update the name of the teacher from the table "materii" : 
  update materii set nume_profesor="Marcel Pavel" where an between 2006 and 2013;
 
-  <li>DQL (Data Query Language)</li>
+ <h2><li>DQL (Data Query Language)</li></h2>
 
 After the testing process, I deleted the data that was no longer relevant in order to preserve the database clean: 
 
