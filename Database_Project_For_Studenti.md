@@ -29,22 +29,56 @@ The tables are connected in the following way:
   To create the database, I had used the CREATE SQL command : "create database Studenti;".
   For this database, there had been five tabeles creates : "facultate, informatii_studenti, materii, note, studenti". Also, the tables were created using the CREATE SQL command :
   <ol>
-  <li>create table Facultate;</li>
-  <li>create table Informatii_studenti;</li>
-  <li>create table Materii;</li>
-  <li>create table Note;</li>
-  <li>create table Studenti;;</li>
-</ol>
 
-  For example : create table Materii
+  <h5><li>create table Facultate;</li></h5>:
+    create table Facultate 
+(id int primary key not null auto_increment, 
+nume_facultate varchar(50) not null,  
+departament_facultate varchar(50) not null, 
+adresa varchar(50) not null); 
+  <li>create table Informatii_studenti;</li>
+create table Informatii_studenti
+(id int not null primary key auto_increment,
+nume_student varchar(20) not null,
+prenume_student varchar(25) not null,
+CNP varchar(13) not null,
+data_nasterii date not null, 
+adresa_domiciliu varchar (50) not null,
+oras varchar (20),
+email varchar(50) not null, 
+nume_mama varchar(30) not null,
+nume_tata varchar(30) not null,
+nr_telefon varchar(13) not null
+); 
+    
+  <h5><li>create table Materii;</li></h5>:
+    create table Materii
 (id int not null primary key auto_increment,
 nume_student varchar(40) not null,
 nume_materie varchar(30) not null,
 An year,
-nume_profesor varchar(30) not null 
-); 
+nume_profesor varchar(30) not null ); 
 
+  <5><li>create table Note;</li></h5>
+  create table Note
+(id int not null primary key auto_increment,
+nume_student varchar(30) not null,
+nume_materie varchar(30) not null, 
+nota int,
+data date not null);
+  
+<h5><li>create table Studenti;;</li></h5>
+  create table Studenti
+(id int primary key not null auto_increment,
+nume_student varchar(40) not null,
+nume_materii varchar(40) not null,
+An year,
+Grupa int,
+Media decimal (6,2),
+Bursa varchar (2) ); 
+</ol>
 
+  
   After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
 
  alter table Studenti
