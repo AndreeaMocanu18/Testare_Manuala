@@ -11,6 +11,7 @@ Database description: The project consists in creating a database called "Studen
 <ol>
 <h2><li>Database Schema </li></h2>
 <br>
+  
 You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them.
 
 The tables are connected in the following way:
@@ -80,13 +81,13 @@ Bursa varchar (2) );
 </ol>
 
   
-  <p>After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
+<ol>After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
 
 <em>alter table Studenti
 modify column Bursa varchar (10);</em> - to modify the column Bursa
 
 <em>alter table informatii_studenti 
-drop column CNP;</em> - to delete the column CNP from the table informatii_studenti</p>
+drop column CNP;</em> - to delete the column CNP from the table informatii_studenti</ol>
  
   
 <h2><li>DML (Data Manipulation Language)</li></h2>
