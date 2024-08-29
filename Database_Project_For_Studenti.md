@@ -36,7 +36,8 @@ The tables are connected in the following way:
 nume_facultate varchar(50) not null,  
 departament_facultate varchar(50) not null, 
 adresa varchar(50) not null); 
-  <li>create table Informatii_studenti;</li>
+
+  <h5<><li>create table Informatii_studenti;</li></5>
 create table Informatii_studenti
 (id int not null primary key auto_increment,
 nume_student varchar(20) not null,
@@ -59,7 +60,7 @@ nume_materie varchar(30) not null,
 An year,
 nume_profesor varchar(30) not null ); 
 
-  <5><li>create table Note;</li></h5>
+  <h5><li>create table Note;</li></h5>
   create table Note
 (id int not null primary key auto_increment,
 nume_student varchar(30) not null,
