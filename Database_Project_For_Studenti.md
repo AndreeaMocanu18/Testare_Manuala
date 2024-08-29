@@ -82,11 +82,11 @@ Bursa varchar (2) );
   
   After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
 
- alter table Studenti
-modify column Bursa varchar (10); - to modify the column Bursa
+<em>alter table Studenti
+modify column Bursa varchar (10);</em> - to modify the column Bursa
 
-alter table informatii_studenti 
-drop column CNP; - to delete the column CNP from the table informatii_studenti
+<em>alter table informatii_studenti 
+drop column CNP;</em> - to delete the column CNP from the table informatii_studenti
  
   
 <h2><li>DML (Data Manipulation Language)</li></h2>
