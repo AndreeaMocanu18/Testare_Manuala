@@ -80,13 +80,13 @@ Bursa varchar (2) );
 </ol>
 
   
-  After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
+  <p>After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
 
 <em>alter table Studenti
 modify column Bursa varchar (10);</em> - to modify the column Bursa
 
 <em>alter table informatii_studenti 
-drop column CNP;</em> - to delete the column CNP from the table informatii_studenti
+drop column CNP;</em> - to delete the column CNP from the table informatii_studenti</p>
  
   
 <h2><li>DML (Data Manipulation Language)</li></h2>
@@ -158,8 +158,8 @@ update informatii_studenti set email = "tdr.grig@gmail.com" where prenume_studen
 
 After the testing process, I deleted the data that was no longer relevant in order to preserve the database clean: 
 
-alter table informatii_studenti 
-drop column CNP; - to delete the column CNP from the table informatii_studenti
+<em>alter table informatii_studenti 
+drop column CNP;<em>cat's meow</em> - to delete the column CNP from the table informatii_studenti
 
 In order to simulate various scenarios that might happen in real life I created the following queries that would cover multiple potential real-life situations:
 
