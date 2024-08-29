@@ -9,7 +9,7 @@ Tools used: <strong>MySQL Workbench</strong>
 Database description: The project consists in creating a database called "Studenti", that consists of five tables with links between them, SQL commands suitable for adding lines with information and displaying data through the application. The five tables will contain information about students, personal data about them, including faculty, grades and subjects. 
 
 <ol>
-<h2><li>Database Schema </li></h2>
+<h2><li>Database Schema</li></h2>
 <br>
   
 You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them.
