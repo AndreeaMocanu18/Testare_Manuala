@@ -37,7 +37,7 @@ nume_facultate varchar(50) not null,
 departament_facultate varchar(50) not null, 
 adresa varchar(50) not null); 
 
-  <h5<><li>create table Informatii_studenti;</li></5>
+  <h5><li>create table Informatii_studenti;</li></h5>
 create table Informatii_studenti
 (id int not null primary key auto_increment,
 nume_student varchar(20) not null,
@@ -95,42 +95,38 @@ drop column CNP; - to delete the column CNP from the table informatii_studenti
 
   Below you can find all the insert instructions that were created in the scope of this project:
 
-1. insert into facultate (id, nume_facultate, departament_facultate, adresa)
-values 
-(1,"Universitatea din București", "Facultatea de Geografie", "Bd. Nicolae Bălcescu nr.1, Bucureşti"), 
+1. <strong>insert into facultate</strong> (id, nume_facultate, departament_facultate, adresa)
+values (1,"Universitatea din București", "Facultatea de Geografie", "Bd. Nicolae Bălcescu nr.1, Bucureşti"), 
 (2,"Universitatea din București", "Facultatea de Biologie", "Splaiul Independenței nr. 91–95, București"),
 (3,"Universitatea din București", "Facultatea de Litere", "Str. Edgar Quinet nr. 5-7, București"),
 (4,"Universitatea din București", "Facultatea de Matematică și Informatică", "Str. Academiei nr. 14, București"),
 (5,"Universitatea din București", "Facultatea de Limbi și Literaturi Străine", "Str. Edgar Quinet nr. 5–7, Bucureşti");  
 In the table "Facultate" there had been added the above information in the form of rows.
 
-2. insert into Note (id,nume_student, nume_materie, nota, data) 
-values
-(1,"Balacu Maria", "Botanică și Microbiologie", 7, "2003-06-20"),
+2. <strong>insert into Note</strong>(id,nume_student, nume_materie, nota, data) 
+values(1,"Balacu Maria", "Botanică și Microbiologie", 7, "2003-06-20"),
 (2,"Grigoras Tudor", "Studii Literare", 9, "2003-06-18"),
 (3,"Anton Mirela", "Matematică", 10, "2003-06-20"),
 (4,"Visan Oana", "Engleză" , 9, "2003-06-18"),
 (5,"Popescu Cristian", "Geografie Umană și Economică", 8, "2003-06-20");
 In the table "Note" there had been added the above information in the form of rows.
 
-3. insert into Studenti (id, nume_student, nume_materii, An, Grupa, Media,Bursa)
-values
-(1, "Balacu Maria", "Botanică și Microbiologie", "2003",  4, 8.30, "nu"),
+3. <strong>insert into Studenti</strong> (id, nume_student, nume_materii, An, Grupa, Media,Bursa)
+values(1, "Balacu Maria", "Botanică și Microbiologie", "2003",  4, 8.30, "nu"),
 (2, "Grigoras Tudor", "Studii Literare", "2003", 1, 10, "da"),
 (3, "Anton Mirela", "Matematică ", "2003", 3, 9.20, "da"),
 (4, "Visan Oana", "Engleză","2003",  2, 9.77, "da"),
 (5, "Popescu Cristian", "Geografie Umană și Economică", "2003", 5, 7.30, "nu");
 In the table "Studenti" there had been added the above information in the form of rows.
 
-4.insert into Materii (id, nume_student, nume_materie, An, nume_profesor)
-values
-(1,"Balacu Maria", "Botanică și Microbiologie", 2003, "Lia Mara Dițu"), 
+4. <strong>insert into Materii</strong>(id, nume_student, nume_materie, An, nume_profesor)
+values(1,"Balacu Maria", "Botanică și Microbiologie", 2003, "Lia Mara Dițu"), 
 (2,"Grigoras Tudor", "Studii Literare", 2003, "Mircea Vasilescu"),
 (3,"Anton Mirela", "Matematică", 2003, "Ionel Popescu"),
 (4,"Visan Oana", "Engleză", 2003, "Dragoș Ivana");  
 In the table "Materii" there had been added the above information in the form of rows.
 
-5.insert into Informatii_studenti (id, nume_student, prenume_student, CNP, data_nasterii, adresa_domiciliu, oras, email,  
+5. <strong>insert into Informatii_studenti</strong> (id, nume_student, prenume_student, CNP, data_nasterii, adresa_domiciliu, oras, email,  
 nume_mama, nume_tata, nr_telefon) 
 values
 (1, "Balacu", "Maria", 6020712088859, "2002-07-12" , "Strada Lalelor 18, bloc 2, etaj 5, apt 30", "Brasov", "maria.balacu@gmail.com", "Balacu Mirela", "Balacu Ion", 0747977892),
