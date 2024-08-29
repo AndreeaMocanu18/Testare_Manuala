@@ -164,6 +164,7 @@ drop column CNP;</em> - to delete the column CNP from the table informatii_stude
 
 In order to simulate various scenarios that might happen in real life I created the following queries that would cover multiple potential real-life situations:
 
+<strong>
 1. select nume_student, nume_materii, grupa from studenti where media >9.60; 
 
 2. select nume_student, nume_materii, grupa, media from studenti where media < 9.60; 
@@ -222,7 +223,7 @@ ON materii.id = studenti.id
 WHERE media > 9.00;
 
 20. select an, grupa, media, bursa from studenti 
-cross join note on studenti.id=note.id; 
+cross join note on studenti.id=note.id;</strong>
 <br>
 
 </ol>
