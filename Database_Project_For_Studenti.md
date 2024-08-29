@@ -143,17 +143,23 @@ Each value insert had been of the same datatype as the respective column and con
 
 <ol>
 1. To replace the name from the table "informatii_studenti of one of the parent based on the condition: update informatii_studenti set nume_mama = "Balacu Antonia" where id=1; 
+  
 2. To replace the addres from the table "informatii_studenti" based on the condition: 
-update informatii_studenti set adresa_domiciliu = "Strada Rezervelor 48, bloc 5, etaj 5, ap.501" where nume_student = "Visan"; 
-3. To replace the name of one university: 
-update facultate set nume_facultate = "ASE" where id=3; 
-4. To modify the year from the "materii" table:
-update materii set an=2004 where id=3; 
-5. To modify the place from the "informatii_studenti" table where the email ends with the specified value:
-update informatii_studenti set oras="Brasov" where email like "%visan"; 
-6. To modify the email from the "informatii_studenti" table where the student name starts with the specified value :
-update informatii_studenti set email = "tdr.grig@gmail.com" where prenume_student like "tudor%"; 
-7. To update the name of the teacher from the table "materii" : 
+update informatii_studenti set adresa_domiciliu = "Strada Rezervelor 48, bloc 5, etaj 5, ap.501" where nume_student = "Visan";
+
+4. To replace the name of one university: 
+update facultate set nume_facultate = "ASE" where id=3;
+
+6. To modify the year from the "materii" table:
+update materii set an=2004 where id=3;
+
+8. To modify the place from the "informatii_studenti" table where the email ends with the specified value:
+update informatii_studenti set oras="Brasov" where email like "%visan";
+
+10. To modify the email from the "informatii_studenti" table where the student name starts with the specified value :
+update informatii_studenti set email = "tdr.grig@gmail.com" where prenume_student like "tudor%";
+
+12. To update the name of the teacher from the table "materii" : 
  update materii set nume_profesor="Marcel Pavel" where an between 2006 and 2013;
 </ol>
 
