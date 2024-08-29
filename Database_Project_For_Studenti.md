@@ -141,7 +141,7 @@ Each value insert had been of the same datatype as the respective column and con
 
   After the insert, in order to prepare the data to be better suited for the testing process, I updated some data in the following way:
 
-<strong>
+<ol><strong>
 1. To replace the name from the table "informatii_studenti of one of the parent based on the condition: update informatii_studenti set nume_mama = "Balacu Antonia" where id=1; 
 2. To replace the addres from the table "informatii_studenti" based on the condition: 
 update informatii_studenti set adresa_domiciliu = "Strada Rezervelor 48, bloc 5, etaj 5, ap.501" where nume_student = "Visan"; 
@@ -154,7 +154,7 @@ update informatii_studenti set oras="Brasov" where email like "%visan";
 6. To modify the email from the "informatii_studenti" table where the student name starts with the specified value :
 update informatii_studenti set email = "tdr.grig@gmail.com" where prenume_student like "tudor%"; 
 7. To update the name of the teacher from the table "materii" : 
- update materii set nume_profesor="Marcel Pavel" where an between 2006 and 2013;</strong> 
+ update materii set nume_profesor="Marcel Pavel" where an between 2006 and 2013;</strong> </ol>
 
  <h2><li>DQL (Data Query Language)</li></h2>
 
