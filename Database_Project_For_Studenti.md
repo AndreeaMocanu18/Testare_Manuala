@@ -168,10 +168,10 @@ update informatii_studenti set email = "tdr.grig@gmail.com" where prenume_studen
 
  <h2><li>DQL (Data Query Language)</li></h2>
 
-After the testing process, I deleted the data that was no longer relevant in order to preserve the database clean: 
+<ol>After the testing process, I deleted the data that was no longer relevant in order to preserve the database clean: 
 
 <em>alter table informatii_studenti 
-drop column CNP;</em> - to delete the column CNP from the table informatii_studenti
+drop column CNP;</em> - to delete the column CNP from the table informatii_studenti</ol>
 
 In order to simulate various scenarios that might happen in real life I created the following queries that would cover multiple potential real-life situations:
 
