@@ -53,7 +53,7 @@ nume_tata varchar(30) not null,
 nr_telefon varchar(13) not null
 ); 
     
-  <h5><li>create table Materii</li></h5>:
+  <h5><li>create table Materii</li></h5>
 create table Materii
 (id int not null primary key auto_increment,
 nume_student varchar(40) not null,
@@ -81,13 +81,13 @@ Bursa varchar (2) );
 </ol>
 
   
-<ol>After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
+<ol>After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:</ol>
 
 <em>alter table Studenti
 modify column Bursa varchar (10);</em> - to modify the column Bursa
 
 <em>alter table informatii_studenti 
-drop column CNP;</em> - to delete the column CNP from the table informatii_studenti</ol>
+drop column CNP;</em> - to delete the column CNP from the table informatii_studenti
  
   
 <h2><li>DML (Data Manipulation Language)</li></h2>
@@ -103,43 +103,43 @@ drop column CNP;</em> - to delete the column CNP from the table informatii_stude
 (3,"Universitatea din București", "Facultatea de Litere", "Str. Edgar Quinet nr. 5-7, București"),
 (4,"Universitatea din București", "Facultatea de Matematică și Informatică", "Str. Academiei nr. 14, București"),
 (5,"Universitatea din București", "Facultatea de Limbi și Literaturi Străine", "Str. Edgar Quinet nr. 5–7, Bucureşti");  
-In the table "Facultate" there had been added the above information in the form of rows.</ol>ol>
+In the table "Facultate" there had been added the above information in the form of rows.</ol>
 
 2. <strong>insert into Note</strong> (id,nume_student, nume_materie, nota, data) 
-values
+<ol>values
 (1,"Balacu Maria", "Botanică și Microbiologie", 7, "2003-06-20"),
 (2,"Grigoras Tudor", "Studii Literare", 9, "2003-06-18"),
 (3,"Anton Mirela", "Matematică", 10, "2003-06-20"),
 (4,"Visan Oana", "Engleză" , 9, "2003-06-18"),
 (5,"Popescu Cristian", "Geografie Umană și Economică", 8, "2003-06-20");
-In the table "Note" there had been added the above information in the form of rows.
+In the table "Note" there had been added the above information in the form of rows.</ol>
 
 3. <strong>insert into Studenti</strong> (id, nume_student, nume_materii, An, Grupa, Media,Bursa)
-values
+<ol>values
 (1, "Balacu Maria", "Botanică și Microbiologie", "2003",  4, 8.30, "nu"),
 (2, "Grigoras Tudor", "Studii Literare", "2003", 1, 10, "da"),
 (3, "Anton Mirela", "Matematică ", "2003", 3, 9.20, "da"),
 (4, "Visan Oana", "Engleză","2003",  2, 9.77, "da"),
 (5, "Popescu Cristian", "Geografie Umană și Economică", "2003", 5, 7.30, "nu");
-In the table "Studenti" there had been added the above information in the form of rows.
+In the table "Studenti" there had been added the above information in the form of rows.</ol>
 
 4. <strong>insert into Materii</strong> (id, nume_student, nume_materie, An, nume_profesor)
-values
+<ol>values
 (1,"Balacu Maria", "Botanică și Microbiologie", 2003, "Lia Mara Dițu"), 
 (2,"Grigoras Tudor", "Studii Literare", 2003, "Mircea Vasilescu"),
 (3,"Anton Mirela", "Matematică", 2003, "Ionel Popescu"),
 (4,"Visan Oana", "Engleză", 2003, "Dragoș Ivana");  
-In the table "Materii" there had been added the above information in the form of rows.
+In the table "Materii" there had been added the above information in the form of rows.</ol>
 
 5. <strong>insert into Informatii_studenti</strong> (id, nume_student, prenume_student, CNP, data_nasterii, adresa_domiciliu, oras, email, nume_mama, nume_tata, nr_telefon) 
-values
+<ol>values
 (1, "Balacu", "Maria", 6020712088859, "2002-07-12" , "Strada Lalelor 18, bloc 2, etaj 5, apt 30", "Brasov", "maria.balacu@gmail.com", "Balacu Mirela", "Balacu Ion", 0747977892),
 (2, "Grigoras", "Tudor", 5011228463591, "2001-12-28", "Strada Margaretei 20, bloc A, etaj 1, apt 4", "Bucuresti", "tudor.grigoras@yahoo.com", "Grigoras Ioana", "Grigoras Marian", 0743200192), 
 (3, "Anton", "Mirela", 6020818170974, "2002-08-18", "Strada Blaj 18, bloc B8, etaj 5, apt 38", "Calarasi", "anton.mirela@gmail.com", " Anton Oana", "Anton Mirel", 0741203211), 
 (4, "Visan", "Oana", 2970314469899, "1997-03-14", "Strada Brandusei 31", "Bucuresti", "oana.v@gmail.com", "Visan Mirela", "Visan Andrei", 0770324565),
 (5, "Popescu", "Cristian", 6030221512692, "2003-01-21", "Strada Fantanii 20", "Calarasi", "c.popescu@yahoo.com", "Popescu Maria", "Popescu Dragos", 0770654719);
 In the table "Informatii_studenti" there had been added the above information in the form of rows.
-Each value insert had been of the same datatype as the respective column and confirmed of the constraints of the column (if any). The values passed using the insert statement into the tables.
+Each value insert had been of the same datatype as the respective column and confirmed of the constraints of the column (if any). The values passed using the insert statement into the tables.</ol>
 
 
   After the insert, in order to prepare the data to be better suited for the testing process, I updated some data in the following way:
