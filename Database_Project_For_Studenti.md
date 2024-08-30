@@ -6,9 +6,9 @@ Application under test: <strong>Studenti database</strong>
 
 Tools used: <strong>MySQL Workbench</strong>
 
-Database description: The project consists in creating a database called "Studenti", that consists of five tables with links between them, SQL commands suitable for adding lines with information and displaying data through the application. The five tables will contain information about students, personal data about them, including faculty, grades and subjects. 
+Database description: The project consists in creating a database called <strong>"Studenti"</strong>, that consists of five tables with links between them, SQL commands suitable for adding lines with information and displaying data through the application. The five tables will contain information about students, personal data about them, including faculty, grades and subjects. 
 
-<ol>
+
 <h2><li>Database Schema</li></h2>
 <br>
   
