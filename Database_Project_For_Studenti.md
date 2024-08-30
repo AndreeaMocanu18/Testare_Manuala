@@ -28,17 +28,17 @@ The tables are connected in the following way:
   The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
   To create the database, I had used the CREATE SQL command : "create database Studenti;".
-  For this database, there had been five tabeles creates : "facultate, informatii_studenti, materii, note, studenti". Also, the tables were created using the CREATE SQL command :
+  For this database, there had been five tabeles creates : "facultate, informatii_studenti, materii, note,and studenti". Also, the tables were created using the CREATE SQL command :
   <ol>
 
-  <h5><li>create table Facultate;</li></h5>:
-    create table Facultate 
+  <h5><li>create table Facultate</li></h5>
+create table Facultate 
 (id int primary key not null auto_increment, 
 nume_facultate varchar(50) not null,  
 departament_facultate varchar(50) not null, 
 adresa varchar(50) not null); 
 
-  <h5><li>create table Informatii_studenti;</li></h5>
+  <h5><li>create table Informatii_studenti</li></h5>
 create table Informatii_studenti
 (id int not null primary key auto_increment,
 nume_student varchar(20) not null,
@@ -53,24 +53,24 @@ nume_tata varchar(30) not null,
 nr_telefon varchar(13) not null
 ); 
     
-  <h5><li>create table Materii;</li></h5>:
-    create table Materii
+  <h5><li>create table Materii</li></h5>:
+create table Materii
 (id int not null primary key auto_increment,
 nume_student varchar(40) not null,
 nume_materie varchar(30) not null,
 An year,
 nume_profesor varchar(30) not null ); 
 
-  <h5><li>create table Note;</li></h5>
-  create table Note
+  <h5><li>create table Note</li></h5>
+create table Note
 (id int not null primary key auto_increment,
 nume_student varchar(30) not null,
 nume_materie varchar(30) not null, 
 nota int,
 data date not null);
   
-<h5><li>create table Studenti;;</li></h5>
-  create table Studenti
+<h5><li>create table Studenti</li></h5>
+create table Studenti
 (id int primary key not null auto_increment,
 nume_student varchar(40) not null,
 nume_materii varchar(40) not null,
@@ -97,13 +97,13 @@ drop column CNP;</em> - to delete the column CNP from the table informatii_stude
   Below you can find all the insert instructions that were created in the scope of this project:
 
 1. <strong>insert into facultate</strong> (id, nume_facultate, departament_facultate, adresa)
-values
+<ol>values
 (1,"Universitatea din București", "Facultatea de Geografie", "Bd. Nicolae Bălcescu nr.1, Bucureşti"), 
 (2,"Universitatea din București", "Facultatea de Biologie", "Splaiul Independenței nr. 91–95, București"),
 (3,"Universitatea din București", "Facultatea de Litere", "Str. Edgar Quinet nr. 5-7, București"),
 (4,"Universitatea din București", "Facultatea de Matematică și Informatică", "Str. Academiei nr. 14, București"),
 (5,"Universitatea din București", "Facultatea de Limbi și Literaturi Străine", "Str. Edgar Quinet nr. 5–7, Bucureşti");  
-In the table "Facultate" there had been added the above information in the form of rows.
+In the table "Facultate" there had been added the above information in the form of rows.</ol>ol>
 
 2. <strong>insert into Note</strong> (id,nume_student, nume_materie, nota, data) 
 values
