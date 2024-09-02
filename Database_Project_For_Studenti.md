@@ -39,45 +39,45 @@ departament_facultate varchar(50) not null,<br>
 adresa varchar(50) not null);<br>
 
   <h5><li>create table Informatii_studenti</li></h5>
-create table Informatii_studenti
-(id int not null primary key auto_increment,
-nume_student varchar(20) not null,
-prenume_student varchar(25) not null,
-CNP varchar(13) not null,
-data_nasterii date not null, 
-adresa_domiciliu varchar (50) not null,
-oras varchar (20),
-email varchar(50) not null, 
-nume_mama varchar(30) not null,
-nume_tata varchar(30) not null,
-nr_telefon varchar(13) not null
+create table Informatii_studenti<br>
+(id int not null primary key auto_increment,<br>
+nume_student varchar(20) not null,<br>
+prenume_student varchar(25) not null,<br>
+CNP varchar(13) not null,<br>
+data_nasterii date not null, <br>
+adresa_domiciliu varchar (50) not null,<br>
+oras varchar (20),<br>
+email varchar(50) not null, <br>
+nume_mama varchar(30) not null,<br>
+nume_tata varchar(30) not null,<br>
+nr_telefon varchar(13) not null<br>
 ); 
     
   <h5><li>create table Materii</li></h5>
-create table Materii
-(id int not null primary key auto_increment,
-nume_student varchar(40) not null,
-nume_materie varchar(30) not null,
-An year,
-nume_profesor varchar(30) not null ); 
+create table Materii<br>
+(id int not null primary key auto_increment,<br>
+nume_student varchar(40) not null,<br>
+nume_materie varchar(30) not null,<br>
+An year,<br>
+nume_profesor varchar(30) not null ); <br>
 
   <h5><li>create table Note</li></h5>
-create table Note
-(id int not null primary key auto_increment,
-nume_student varchar(30) not null,
-nume_materie varchar(30) not null, 
-nota int,
-data date not null);
+create table Note<br>
+(id int not null primary key auto_increment,<br>
+nume_student varchar(30) not null,<br>
+nume_materie varchar(30) not null, <br>
+nota int,<br>
+data date not null);<br>
   
 <h5><li>create table Studenti</li></h5>
-create table Studenti
-(id int primary key not null auto_increment,
-nume_student varchar(40) not null,
-nume_materii varchar(40) not null,
-An year,
-Grupa int,
-Media decimal (6,2),
-Bursa varchar (2) ); 
+create table Studenti<br>
+(id int primary key not null auto_increment,<br>
+nume_student varchar(40) not null,<br>
+nume_materii varchar(40) not null,<br>
+An year,<br>
+Grupa int,<br>
+Media decimal (6,2),<br>
+Bursa varchar (2) ); <br>
 </ol>
 
   
