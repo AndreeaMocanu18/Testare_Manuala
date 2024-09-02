@@ -151,18 +151,18 @@ Each value insert had been of the same datatype as the respective column and con
 <strong>update informatii_studenti set adresa_domiciliu = "Strada Rezervelor 48, bloc 5, etaj 5, ap.501" where nume_student = "Visan";</strong>
 
 3. To replace the name of one university:
-4. <strong>update facultate set nume_facultate = "ASE" where id=3;</strong>
+<strong>update facultate set nume_facultate = "ASE" where id=3;</strong>
 
-5. To modify the year from the "materii" table:
+4. To modify the year from the "materii" table:
 <strong>update materii set an=2004 where id=3;</strong>
 
-6. To modify the place from the "informatii_studenti" table where the email ends with the specified value:
+5. To modify the place from the "informatii_studenti" table where the email ends with the specified value:
 <strong>update informatii_studenti set oras="Brasov" where email like "%visan";</strong>
 
-7. To modify the email from the "informatii_studenti" table where the student name starts with the specified value :
+6. To modify the email from the "informatii_studenti" table where the student name starts with the specified value :
 <strong>update informatii_studenti set email = "tdr.grig@gmail.com" where prenume_student like "tudor%";</strong>
 
-8. To update the name of the teacher from the table "materii" : 
+7. To update the name of the teacher from the table "materii" : 
 <strong>update materii set nume_profesor="Marcel Pavel" where an between 2006 and 2013;</strong>
 </ol>
 
@@ -240,11 +240,9 @@ cross join note on studenti.id=note.id;</strong>
 
 22. <strong>select nume_student, prenume_student, adresa_domiciliu from informatii_studenti order by oras;</strong>
     
-23. <strong>select * from studenti order by media asc;</strong>
+23. <strong>select nume_student, nume_materii, bursa from studenti order by media asc;</strong>  to select the nume_student, nume_materii, bursa from "studenti" and sort in an asscending order the media
 
-24. <strong>select * from studenti order by media asc limit 3;</strong>
-
-25. 
+24. <strong>select nume_student, nume_materii, bursa from studenti order by media desc limit 3;</strong> - to select the nume_student, nume_materii, bursa from "studenti" and sort in an descending order the media by restricting the number of results. 
 <br>
 
 </ol>
