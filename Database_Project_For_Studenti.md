@@ -234,6 +234,16 @@ WHERE media > 9.00;
 
 20. select an, grupa, media, bursa from studenti 
 cross join note on studenti.id=note.id;</strong>
+
+21. select nume_student, nume_materie from materii order by an;
+
+22. select nume_student, prenume_student, adresa_domiciliu from informatii_studenti order by oras;
+    
+23. select * from studenti order by media asc;
+
+24. select * from studenti order by media asc limit 3;
+
+25. 
 <br>
 
 </ol>
