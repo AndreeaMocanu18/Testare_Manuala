@@ -50,8 +50,7 @@ oras varchar (20),<br>
 email varchar(50) not null, <br>
 nume_mama varchar(30) not null,<br>
 nume_tata varchar(30) not null,<br>
-nr_telefon varchar(13) not null<br>
-); 
+nr_telefon varchar(13) not null); <br>
     
   <h5><li>create table Materii</li></h5>
 create table Materii<br>
