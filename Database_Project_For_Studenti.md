@@ -96,47 +96,47 @@ drop column CNP;</em> - to delete the column CNP from the table informatii_stude
   Below you can find all the insert instructions that were created in the scope of this project:
 
 1. <strong>insert into facultate</strong> (id, nume_facultate, departament_facultate, adresa)
-<ol>values
-(1,"Universitatea din București", "Facultatea de Geografie", "Bd. Nicolae Bălcescu nr.1, Bucureşti"), 
-(2,"Universitatea din București", "Facultatea de Biologie", "Splaiul Independenței nr. 91–95, București"),
-(3,"Universitatea din București", "Facultatea de Litere", "Str. Edgar Quinet nr. 5-7, București"),
-(4,"Universitatea din București", "Facultatea de Matematică și Informatică", "Str. Academiei nr. 14, București"),
-(5,"Universitatea din București", "Facultatea de Limbi și Literaturi Străine", "Str. Edgar Quinet nr. 5–7, Bucureşti");  
+<ol>values<br>
+(1,"Universitatea din București", "Facultatea de Geografie", "Bd. Nicolae Bălcescu nr.1, Bucureşti"), <br>
+(2,"Universitatea din București", "Facultatea de Biologie", "Splaiul Independenței nr. 91–95, București"),<br>
+(3,"Universitatea din București", "Facultatea de Litere", "Str. Edgar Quinet nr. 5-7, București"),<br>
+(4,"Universitatea din București", "Facultatea de Matematică și Informatică", "Str. Academiei nr. 14, București"),<br>
+(5,"Universitatea din București", "Facultatea de Limbi și Literaturi Străine", "Str. Edgar Quinet nr. 5–7, Bucureşti");  <br>
 In the table "Facultate" there had been added the above information in the form of rows.</ol>
 
 2. <strong>insert into Note</strong> (id,nume_student, nume_materie, nota, data) 
-<ol>values
-(1,"Balacu Maria", "Botanică și Microbiologie", 7, "2003-06-20"),
-(2,"Grigoras Tudor", "Studii Literare", 9, "2003-06-18"),
-(3,"Anton Mirela", "Matematică", 10, "2003-06-20"),
-(4,"Visan Oana", "Engleză" , 9, "2003-06-18"),
-(5,"Popescu Cristian", "Geografie Umană și Economică", 8, "2003-06-20");
+<ol>values<br>
+(1,"Balacu Maria", "Botanică și Microbiologie", 7, "2003-06-20"),<br>
+(2,"Grigoras Tudor", "Studii Literare", 9, "2003-06-18"),<br>
+(3,"Anton Mirela", "Matematică", 10, "2003-06-20"),<br>
+(4,"Visan Oana", "Engleză" , 9, "2003-06-18"),<br>
+(5,"Popescu Cristian", "Geografie Umană și Economică", 8, "2003-06-20");<br>
 In the table "Note" there had been added the above information in the form of rows.</ol>
 
 3. <strong>insert into Studenti</strong> (id, nume_student, nume_materii, An, Grupa, Media,Bursa)
-<ol>values
-(1, "Balacu Maria", "Botanică și Microbiologie", "2003",  4, 8.30, "nu"),
-(2, "Grigoras Tudor", "Studii Literare", "2003", 1, 10, "da"),
-(3, "Anton Mirela", "Matematică ", "2003", 3, 9.20, "da"),
-(4, "Visan Oana", "Engleză","2003",  2, 9.77, "da"),
-(5, "Popescu Cristian", "Geografie Umană și Economică", "2003", 5, 7.30, "nu");
+<ol>values<br>
+(1, "Balacu Maria", "Botanică și Microbiologie", "2003",  4, 8.30, "nu"),<br>
+(2, "Grigoras Tudor", "Studii Literare", "2003", 1, 10, "da"),<br>
+(3, "Anton Mirela", "Matematică ", "2003", 3, 9.20, "da"),<br>
+(4, "Visan Oana", "Engleză","2003",  2, 9.77, "da"),<br>
+(5, "Popescu Cristian", "Geografie Umană și Economică", "2003", 5, 7.30, "nu");<br>
 In the table "Studenti" there had been added the above information in the form of rows.</ol>
 
 4. <strong>insert into Materii</strong> (id, nume_student, nume_materie, An, nume_profesor)
-<ol>values
-(1,"Balacu Maria", "Botanică și Microbiologie", 2003, "Lia Mara Dițu"), 
-(2,"Grigoras Tudor", "Studii Literare", 2003, "Mircea Vasilescu"),
-(3,"Anton Mirela", "Matematică", 2003, "Ionel Popescu"),
-(4,"Visan Oana", "Engleză", 2003, "Dragoș Ivana");  
+<ol>values<br>
+(1,"Balacu Maria", "Botanică și Microbiologie", 2003, "Lia Mara Dițu"), <br>
+(2,"Grigoras Tudor", "Studii Literare", 2003, "Mircea Vasilescu"),<br>
+(3,"Anton Mirela", "Matematică", 2003, "Ionel Popescu"),<br>
+(4,"Visan Oana", "Engleză", 2003, "Dragoș Ivana");  <br>
 In the table "Materii" there had been added the above information in the form of rows.</ol>
 
 5. <strong>insert into Informatii_studenti</strong> (id, nume_student, prenume_student, CNP, data_nasterii, adresa_domiciliu, oras, email, nume_mama, nume_tata, nr_telefon) 
-<ol>values
-(1, "Balacu", "Maria", 6020712088859, "2002-07-12" , "Strada Lalelor 18, bloc 2, etaj 5, apt 30", "Brasov", "maria.balacu@gmail.com", "Balacu Mirela", "Balacu Ion", 0747977892),
-(2, "Grigoras", "Tudor", 5011228463591, "2001-12-28", "Strada Margaretei 20, bloc A, etaj 1, apt 4", "Bucuresti", "tudor.grigoras@yahoo.com", "Grigoras Ioana", "Grigoras Marian", 0743200192), 
-(3, "Anton", "Mirela", 6020818170974, "2002-08-18", "Strada Blaj 18, bloc B8, etaj 5, apt 38", "Calarasi", "anton.mirela@gmail.com", " Anton Oana", "Anton Mirel", 0741203211), 
-(4, "Visan", "Oana", 2970314469899, "1997-03-14", "Strada Brandusei 31", "Bucuresti", "oana.v@gmail.com", "Visan Mirela", "Visan Andrei", 0770324565),
-(5, "Popescu", "Cristian", 6030221512692, "2003-01-21", "Strada Fantanii 20", "Calarasi", "c.popescu@yahoo.com", "Popescu Maria", "Popescu Dragos", 0770654719);
+<ol>values<br>
+(1, "Balacu", "Maria", 6020712088859, "2002-07-12" , "Strada Lalelor 18, bloc 2, etaj 5, apt 30", "Brasov", "maria.balacu@gmail.com", "Balacu Mirela", "Balacu Ion", 0747977892),<br>
+(2, "Grigoras", "Tudor", 5011228463591, "2001-12-28", "Strada Margaretei 20, bloc A, etaj 1, apt 4", "Bucuresti", "tudor.grigoras@yahoo.com", "Grigoras Ioana", "Grigoras Marian", 0743200192), <br>
+(3, "Anton", "Mirela", 6020818170974, "2002-08-18", "Strada Blaj 18, bloc B8, etaj 5, apt 38", "Calarasi", "anton.mirela@gmail.com", " Anton Oana", "Anton Mirel", 0741203211), <br>
+(4, "Visan", "Oana", 2970314469899, "1997-03-14", "Strada Brandusei 31", "Bucuresti", "oana.v@gmail.com", "Visan Mirela", "Visan Andrei", 0770324565),<br>
+(5, "Popescu", "Cristian", 6030221512692, "2003-01-21", "Strada Fantanii 20", "Calarasi", "c.popescu@yahoo.com", "Popescu Maria", "Popescu Dragos", 0770654719);<br>
 In the table "Informatii_studenti" there had been added the above information in the form of rows.
 Each value insert had been of the same datatype as the respective column and confirmed of the constraints of the column (if any). The values passed using the insert statement into the tables.</ol>
 
