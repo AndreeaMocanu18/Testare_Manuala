@@ -32,11 +32,11 @@ The tables are connected in the following way:
   <ol>
 
   <h5><li>create table Facultate</li></h5>
- create table Facultate 
-(id int primary key not null auto_increment, 
-nume_facultate varchar(50) not null,  
-departament_facultate varchar(50) not null, 
-adresa varchar(50) not null); 
+ create table Facultate<br>
+(id int primary key not null auto_increment,<br>
+nume_facultate varchar(50) not null, <br>
+departament_facultate varchar(50) not null,<br>
+adresa varchar(50) not null);<br>
 
   <h5><li>create table Informatii_studenti</li></h5>
 create table Informatii_studenti
