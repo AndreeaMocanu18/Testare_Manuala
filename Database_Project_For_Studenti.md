@@ -144,23 +144,25 @@ Each value insert had been of the same datatype as the respective column and con
   After the insert, in order to prepare the data to be better suited for the testing process, I updated some data in the following way:
 
 <ol>
-1. To replace the name from the table "informatii_studenti of one of the parent based on the condition: <strong>update informatii_studenti set nume_mama = "Balacu Antonia" where id=1;</strong>
+1. To replace the name from the table "informatii_studenti of one of the parent based on the condition: 
+  <strong>update informatii_studenti set nume_mama = "Balacu Antonia" where id=1;</strong>
   
 2. To replace the addres from the table "informatii_studenti" based on the condition: 
 <strong>update informatii_studenti set adresa_domiciliu = "Strada Rezervelor 48, bloc 5, etaj 5, ap.501" where nume_student = "Visan";</strong>
 
-3. <strong>To replace the name of one university: update facultate set nume_facultate = "ASE" where id=3;</strong>
+3. To replace the name of one university:
+4. <strong>update facultate set nume_facultate = "ASE" where id=3;</strong>
 
-4. To modify the year from the "materii" table:
+5. To modify the year from the "materii" table:
 <strong>update materii set an=2004 where id=3;</strong>
 
-5. To modify the place from the "informatii_studenti" table where the email ends with the specified value:
+6. To modify the place from the "informatii_studenti" table where the email ends with the specified value:
 <strong>update informatii_studenti set oras="Brasov" where email like "%visan";</strong>
 
-6. To modify the email from the "informatii_studenti" table where the student name starts with the specified value :
+7. To modify the email from the "informatii_studenti" table where the student name starts with the specified value :
 <strong>update informatii_studenti set email = "tdr.grig@gmail.com" where prenume_student like "tudor%";</strong>
 
-7. To update the name of the teacher from the table "materii" : 
+8. To update the name of the teacher from the table "materii" : 
 <strong>update materii set nume_profesor="Marcel Pavel" where an between 2006 and 2013;</strong>
 </ol>
 
@@ -173,74 +175,74 @@ drop column CNP;</em> - to delete the column CNP from the table informatii_stude
 
 In order to simulate various scenarios that might happen in real life I created the following queries that would cover multiple potential real-life situations:
 
-<strong>
-1. select nume_student, nume_materii, grupa from studenti where media >9.60; 
 
-2. select nume_student, nume_materii, grupa, media from studenti where media < 9.60; 
+1. <strong>select nume_student, nume_materii, grupa from studenti where media >9.60; </strong>
 
-3. select departament_facultate, adresa from facultate where adresa like "%5%";
+2. <strong>select nume_student, nume_materii, grupa, media from studenti where media < 9.60; </strong>
 
-4. select departament_facultate, adresa from facultate where adresa like "str.%";
+3. <strong>select departament_facultate, adresa from facultate where adresa like "%5%";</strong> - to select the departament_facultate, adresa from "facultate" where the address contains the number "5"
 
-5. select departament_facultate, adresa from facultate where nume_facultate like "%Bucuresti";
+4. <strong>select departament_facultate, adresa from facultate where adresa like "str.%";</strong> - to extract the departament_facultate, adresa from "facultate" where the address begins with "str."
 
-6. select nume_student, prenume_student, adresa_domiciliu from informatii_studenti where oras="Bucuresti" or data_nasterii="2003-01-21";
+5. <strong>select departament_facultate, adresa from facultate where nume_facultate like "%Bucuresti";</strong> - to extract the departament_facultate, adresa from "facultate" where the nume_facultate ends with "Bucuresti"
 
-7. select nume_student, prenume_student, adresa_domiciliu from informatii_studenti where oras="Bucuresti" and data_nasterii="1997-03-14";
+6. <strong>select nume_student, prenume_student, adresa_domiciliu from informatii_studenti where oras="Bucuresti" or data_nasterii="2003-01-21";</strong>
 
-8. select nume_student, nume_materie, nota, data from note join facultate; 
+7. <strong>select nume_student, prenume_student, adresa_domiciliu from informatii_studenti where oras="Bucuresti" and data_nasterii="1997-03-14";</strong>
 
-9. select an, grupa, media, bursa from studenti 
-join note on studenti.id=note.id; 
+8. <strong>select nume_student, nume_materie, nota, data from note join facultate; </strong>
 
-10. select prenume_student, oras, nume_mama, nume_tata
+9. <strong>select an, grupa, media, bursa from studenti 
+join note on studenti.id=note.id; </strong>
+
+10. <strong>select prenume_student, oras, nume_mama, nume_tata
 from informatii_studenti 
-left join materii on informatii_studenti.id=materii.id; 
+left join materii on informatii_studenti.id=materii.id; </strong>
 
-11. select nume_facultate, departament_facultate from facultate
+11. <strong>select nume_facultate, departament_facultate from facultate
 right join materii
-on facultate.id=materii.id;
+on facultate.id=materii.id;</strong>
 
-12. select max(nota) from note;
+12. <strong>select max(nota) from note;</strong> - to select the maximum grade from "note" 
 
-13. select max(media) from studenti;
+13. <strong>select max(media) from studenti;</strong> - to select the maximum media from "studenti" 
 
-14. select min(nota) from note;
+14. <strong>select min(nota) from note;</strong> - the minimum grade from "note" 
 
-15. select min(media) from studenti;
+15. <strong>select min(media) from studenti;</strong> the minimum media from "studenti" 
 
-16. select adresa_domiciliu, nume_mama, nume_tata
+16. <strong>select adresa_domiciliu, nume_mama, nume_tata
 from informatii_studenti
 inner join facultate on facultate.id=informatii_studenti.id
-where oras="Bucuresti";
+where oras="Bucuresti";</strong>
 
-17. select nume_facultate, departament_facultate, adresa
+17. <strong>select nume_facultate, departament_facultate, adresa
 from facultate
 right join note on note.id=facultate.id
-where data="2003-06-18";
+where data="2003-06-18";</strong>
 
-18. select nume_facultate, departament_facultate, adresa
+18. <strong>select nume_facultate, departament_facultate, adresa
 from facultate
 inner join note on note.id=facultate.id
 inner join materii on materii.id=facultate.id
-where data="2003-06-18"; 
+where data="2003-06-18"; </strong>
 
-19. SELECT nume_materie, nume_profesor
+19. <strong>SELECT nume_materie, nume_profesor
 FROM materii
 INNER JOIN studenti
 ON materii.id = studenti.id 
-WHERE media > 9.00;
+WHERE media > 9.00;</strong>
 
-20. select an, grupa, media, bursa from studenti 
+20. <strong>select an, grupa, media, bursa from studenti 
 cross join note on studenti.id=note.id;</strong>
 
-21. select nume_student, nume_materie from materii order by an;
+21. <strong>select nume_student, nume_materie from materii order by an;</strong>
 
-22. select nume_student, prenume_student, adresa_domiciliu from informatii_studenti order by oras;
+22. <strong>select nume_student, prenume_student, adresa_domiciliu from informatii_studenti order by oras;</strong>
     
-23. select * from studenti order by media asc;
+23. <strong>select * from studenti order by media asc;</strong>
 
-24. select * from studenti order by media asc limit 3;
+24. <strong>select * from studenti order by media asc limit 3;</strong>
 
 25. 
 <br>
