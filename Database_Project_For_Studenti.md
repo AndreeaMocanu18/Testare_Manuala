@@ -144,25 +144,24 @@ Each value insert had been of the same datatype as the respective column and con
   After the insert, in order to prepare the data to be better suited for the testing process, I updated some data in the following way:
 
 <ol>
-1. To replace the name from the table "informatii_studenti of one of the parent based on the condition: update informatii_studenti set nume_mama = "Balacu Antonia" where id=1; 
+1. To replace the name from the table "informatii_studenti of one of the parent based on the condition: <strong>update informatii_studenti set nume_mama = "Balacu Antonia" where id=1;</strong>
   
 2. To replace the addres from the table "informatii_studenti" based on the condition: 
-update informatii_studenti set adresa_domiciliu = "Strada Rezervelor 48, bloc 5, etaj 5, ap.501" where nume_student = "Visan";
+<strong>update informatii_studenti set adresa_domiciliu = "Strada Rezervelor 48, bloc 5, etaj 5, ap.501" where nume_student = "Visan";</strong>
 
-4. To replace the name of one university: 
-update facultate set nume_facultate = "ASE" where id=3;
+3. <strong>To replace the name of one university: update facultate set nume_facultate = "ASE" where id=3;</strong>
 
-6. To modify the year from the "materii" table:
-update materii set an=2004 where id=3;
+4. To modify the year from the "materii" table:
+<strong>update materii set an=2004 where id=3;</strong>
 
-8. To modify the place from the "informatii_studenti" table where the email ends with the specified value:
-update informatii_studenti set oras="Brasov" where email like "%visan";
+5. To modify the place from the "informatii_studenti" table where the email ends with the specified value:
+<strong>update informatii_studenti set oras="Brasov" where email like "%visan";</strong>
 
-10. To modify the email from the "informatii_studenti" table where the student name starts with the specified value :
-update informatii_studenti set email = "tdr.grig@gmail.com" where prenume_student like "tudor%";
+6. To modify the email from the "informatii_studenti" table where the student name starts with the specified value :
+<strong>update informatii_studenti set email = "tdr.grig@gmail.com" where prenume_student like "tudor%";</strong>
 
-12. To update the name of the teacher from the table "materii" : 
- update materii set nume_profesor="Marcel Pavel" where an between 2006 and 2013;
+7. To update the name of the teacher from the table "materii" : 
+<strong>update materii set nume_profesor="Marcel Pavel" where an between 2006 and 2013;</strong>
 </ol>
 
  <h2><li>DQL (Data Query Language)</li></h2>
