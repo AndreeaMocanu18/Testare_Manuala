@@ -186,9 +186,9 @@ In order to simulate various scenarios that might happen in real life I created 
 
 5. <strong>select departament_facultate, adresa from facultate where nume_facultate like "%Bucuresti";</strong> - to extract the departament_facultate, adresa from "facultate" where the nume_facultate ends with "Bucuresti"
 
-6. <strong>select nume_student, prenume_student, adresa_domiciliu from informatii_studenti where oras="Bucuresti" or data_nasterii="2003-01-21";</strong>
+6. <strong>select nume_student, prenume_student, adresa_domiciliu from informatii_studenti where oras="Bucuresti" or data_nasterii="2003-01-21";</strong> - to extract the data from "informatii_studenti" based on the conditions: the city has to be Bucuresti or date of birth is 2003-01-21. 
 
-7. <strong>select nume_student, prenume_student, adresa_domiciliu from informatii_studenti where oras="Bucuresti" and data_nasterii="1997-03-14";</strong>
+7. <strong>select nume_student, prenume_student, adresa_domiciliu from informatii_studenti where oras="Bucuresti" and data_nasterii="1997-03-14";</strong>- to extract the data from "informatii_studenti" where the city is Bucuresti and date of birth is 1997-03-14
 
 8. <strong>select nume_student, nume_materie, nota, data from note join facultate; </strong>
 
@@ -203,13 +203,13 @@ left join materii on informatii_studenti.id=materii.id; </strong>
 right join materii
 on facultate.id=materii.id;</strong>
 
-12. <strong>select max(nota) from note;</strong> - to select the maximum grade from "note" 
+12. <strong>select max(nota) from note;</strong> - to select the highest grade from "note" 
 
-13. <strong>select max(media) from studenti;</strong> - to select the maximum media from "studenti" 
+13. <strong>select max(media) from studenti;</strong> - to select the highest media from "studenti" 
 
-14. <strong>select min(nota) from note;</strong> - the minimum grade from "note" 
+14. <strong>select min(nota) from note;</strong> - to extract the lowest grade from "note" 
 
-15. <strong>select min(media) from studenti;</strong> the minimum media from "studenti" 
+15. <strong>select min(media) from studenti;</strong> -to extract the lowest media from "studenti" 
 
 16. <strong>select adresa_domiciliu, nume_mama, nume_tata
 from informatii_studenti
