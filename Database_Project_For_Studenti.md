@@ -19,6 +19,12 @@ The tables are connected in the following way:
 <ul>
   <li> Tabela "Facultate" is connected with tabela "Informatii_studenti" through a one-to-one relationship which was implemented through Facultate.id as a primary key </li>
   <li> Tabela "materii" is connected with tabela "note" and "studenti" through a one-to-many relationship which was implemented through materii.id as a primary key</li>
+
+  Reverse engineer: 
+  ![Untitled](https://github.com/user-attachments/assets/1b0819d7-048f-4e5a-8193-0027aa648753)
+  ![Untitled2](https://github.com/user-attachments/assets/1a7e6ec1-b25c-4c46-8a43-c33f75924bb7)
+
+
  
 <li>Database Queries</li><br>
 
